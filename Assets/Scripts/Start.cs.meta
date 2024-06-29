@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b83a7737349fbbb43a20e8a2832287c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - StopButton: {fileID: 4313380853956352617, guid: c3f4fb23b6114b345b2acfaf06df4cc2, type: 3}
+  - RestartButton: {instanceID: 0}
+  - ContinueButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
