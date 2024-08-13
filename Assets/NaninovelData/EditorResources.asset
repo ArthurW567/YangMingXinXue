@@ -251,3 +251,55 @@ MonoBehaviour:
     - name: "\u795E\u79D8\u4EBA"
       pathPrefix: "Characters/\u4EBA\u7269"
       guid: 2444aa8f997fa1749b6c8e0cd117360b
+  - Id: Characters/e5e5f1f2-c30b-496f-a883-ceff42df581f
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u738B\u534E"
+      guid: 5a0008da7b5621e4399d79473289ced6
+  - Id: Characters/dd9ff9c9-7383-4453-961a-991b5d8d7679
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u5C0F\u738B\u9633\u660E"
+      guid: 2762f964e9d716245a565102b7853d89
+  - Id: CharacterAvatars
+    Resources: []
+  - Id: Characters/e4aae8fe-f19a-45fc-969c-6d96e4d1a89c
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u6559\u4E66\u5148\u751F"
+      guid: d354bc648791da24eb37d2dbd28dd95d
+  - Id: Characters/2ceb73e1-0ad6-4bf7-b953-60c4e9342c87
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u738B\u9633\u660E"
+      guid: 2b08975171190b646bd6d595d37e2296
+  - Id: Characters/295a28ac-b416-497d-b332-854cbf21c648
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u795E\u79D8\u4EBA"
+      guid: 2444aa8f997fa1749b6c8e0cd117360b
+  - Id: Characters/8b6894a6-dea3-40ce-879a-eafd724d1b85
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u65E0\u4E3A\u9053\u8005"
+      guid: 2444aa8f997fa1749b6c8e0cd117360b
+  - Id: Characters/00dddc97-a695-42e6-90ce-0e1c02952fd4
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u9646\u4E5D\u6E0A"
+      guid: f745f14d615df0b41a2b673d1577b683
+  - Id: Characters/ce213ba3-a47c-44e7-b2e7-1ce9467930f1
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u53CB\u4EBA"
+      guid: 8279fbd2003ec6e4ab9481deb4dd0e80
+  - Id: Characters/98169ce3-87df-4149-b7eb-22b68464910d
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u4EB2\u4EBA"
+      guid: d354bc648791da24eb37d2dbd28dd95d
+  - Id: Characters/eaa7c912-dc25-4db9-8a13-32a958815d64
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\u8BB8\u748B"
+      guid: 95f34b2383f9a4a4fac237ce65169aac

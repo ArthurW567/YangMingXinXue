@@ -1,13 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     private int i = -1;
     public int[] number;
-    
+
+    public static string dialogueLabel = "Level1";
+
+    public static void GoToDialogueScene()
+	{
+        SceneManager.LoadScene("Dialogue");
+	}
+
+    public void Victory()
+    {
+        level++;
+        dialogueLabel = "Level" + level;
+        if(level >= 7)
+            dialogueLabel = "End";
+        GoToDialogueScene();
+    }
+
+    public void Fail()
+	{
+        dialogueLabel = "Level" + level + "_Fail";
+        GoToDialogueScene();
+    }
+
     private void Awake()
     {
         Instance = this;
@@ -17,15 +40,16 @@ public class LevelManager : MonoBehaviour
         i = -1;
         number = Serial();
     }
-    [SerializeField]private int Level=1;
+    [SerializeField] public static int level = 1;
     [SerializeField] private float wave;
+
     public int GetLevel()
     {
-        return Level;
+        return level;
     }
     public int LevelTime()
     {
-        switch (Level)
+        switch (level)
         {
             case 1:
                 return 60;
@@ -46,7 +70,7 @@ public class LevelManager : MonoBehaviour
     }
     public int TotalNumber()
     {
-        switch (Level)
+        switch (level)
         {
             case 1:
                 return 100;
@@ -69,7 +93,7 @@ public class LevelManager : MonoBehaviour
     {
         int totalnumber = 0;
         int[] number = new int[400];
-        switch (Level)
+        switch (level)
         {
             case 1:
                 totalnumber = 100;
@@ -147,7 +171,7 @@ public class LevelManager : MonoBehaviour
     }
     public float Wave()
     {
-        switch (Level)
+        switch (level)
         {
             case 1:
                 wave=30;
@@ -177,10 +201,6 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         
-    }
-    public void LevelPlus()
-    {
-        this.Level++;
     }
     // Update is called once per frame
     void Update()

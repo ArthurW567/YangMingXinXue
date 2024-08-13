@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject open;
     public static GameManager Instance;
     public GameObject disturbanceGenerator;
+    public GameState gameState;
     //生成器
 
     void Awake()
@@ -45,7 +46,8 @@ public class GameManager : MonoBehaviour
     }
     void HandleVictory()
     {
-        LevelManager.Instance.LevelPlus();
+        Debug.Log("Victory!");
+        LevelManager.Instance.Victory();
         Player.falseTime = -99;
         var service = Engine.GetService<ICustomVariableManager>();
         StartCoroutine("CameraA");
@@ -53,10 +55,24 @@ public class GameManager : MonoBehaviour
         close.SetActive(false);
         service.SetVariableValue("level", LevelManager.Instance.GetLevel().ToString());
     }
-        
-        
-    public void UpdateGameState(GameState newState)
+
+    void HandleFail()
     {
+        Debug.Log("Fail!");
+        LevelManager.Instance.Fail();
+    }
+	private void Update()
+	{
+        if (Input.GetKeyDown(KeyCode.P))
+            UpdateGameState(GameState.Victory);
+        if (Input.GetKeyDown(KeyCode.L))
+            UpdateGameState(GameState.GameOver);
+    }
+
+
+	public void UpdateGameState(GameState newState)
+    {
+        gameState = newState;
         switch (newState)
         {
             case GameState.Playing:
@@ -65,9 +81,10 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1;
                 break;
             case GameState.GameOver:
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 disturbanceGenerator.SetActive(false);
                 DisturbanceGenerator.Instance.Reset();
+                HandleFail();
                 break;
             case GameState.Paused:
                 Time.timeScale = 0;
