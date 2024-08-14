@@ -282,7 +282,7 @@ MonoBehaviour:
     Resources:
     - name: Default
       pathPrefix: "Characters/\u65E0\u4E3A\u9053\u8005"
-      guid: 2444aa8f997fa1749b6c8e0cd117360b
+      guid: bccab82caf9e3a34489493414d7dc3ae
   - Id: Characters/00dddc97-a695-42e6-90ce-0e1c02952fd4
     Resources:
     - name: Default

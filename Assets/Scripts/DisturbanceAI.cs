@@ -5,22 +5,30 @@ using UnityEngine;
 public class DisturbanceAI : MonoBehaviour
 {
     private GameObject player;
-    private Disturbance disturbance;
+    private DisturbanceParam disturbance;
 
     // Start is called before the first frame update
-    public void SetDisturbance(Disturbance x) 
+    public void SetDisturbance(DisturbanceParam x) 
     {
         this.disturbance = x;
     }
-    public Disturbance GetDisturbance()
+    public DisturbanceParam GetDisturbance()
     {
         return this.disturbance;
     }
+
+    void CalcScale()
+    {
+        float scale = 0.12f + Mathf.Pow(disturbance.health, 0.6f) * 0.02f;
+        scale *= Mathf.Pow(0.95f, LevelManager.level - 1f);
+        scale = Mathf.Clamp(scale, 0.10f, 0.24f);
+        gameObject.transform.localScale = new Vector3(scale, scale, 1f);
+    }
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if (disturbance.health >= 1&&disturbance.health<=6) { gameObject.transform.localScale = new Vector3(0.14f + disturbance.health * 0.02f, 0.14f + disturbance.health * 0.02f, 1); }
-        if (disturbance.health > 10) { gameObject.transform.localScale = new Vector3(1f, 1f, 1); }
+        CalcScale();
     }
 
     IEnumerator Fade()
@@ -45,14 +53,7 @@ public class DisturbanceAI : MonoBehaviour
     private void OnMouseDown()
     {
         disturbance.health--;
-        if (disturbance.health >= 0 && disturbance.health <= 10) { gameObject.transform.localScale = new Vector3(0.14f + disturbance.health * 0.02f, 0.14f + disturbance.health * 0.02f, 1); }
-        if(disturbance.health>10){ gameObject.transform.localScale = new Vector3(1f, 1f, 1); }
-        if (disturbance.health<=0)
-        {
-            StartCoroutine("Fade");
-            DisturbanceGenerator.Instance.AddDeath();
-        }
-        
+        CalcScale();        
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -60,7 +61,7 @@ public class DisturbanceAI : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("Fade");
-            DisturbanceGenerator.Instance.AddDeath();
+            //DisturbanceGenerator.Instance.AddDeath();
         }
     }
 

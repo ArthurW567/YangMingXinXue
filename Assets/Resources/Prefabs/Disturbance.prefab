@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7580781770657901588}
   - component: {fileID: 1806567349903592326}
   - component: {fileID: 3194923804138814099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Disturbance
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4505630559775357391}
   - component: {fileID: 4820557138694304864}
   - component: {fileID: 2582752375937140381}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u65E0\u5B57"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5242823862525818979}
   - component: {fileID: 1323771518385197382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u5B57"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

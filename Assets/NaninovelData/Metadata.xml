@@ -94,6 +94,14 @@
         &lt;Description&gt;亲人&lt;/Description&gt;
       &lt;/Actor&gt;
       &lt;Actor&gt;
+        &lt;Id&gt;许璋&lt;/Id&gt;
+        &lt;Type&gt;Characters&lt;/Type&gt;
+        &lt;Appearances&gt;
+          &lt;string&gt;Default&lt;/string&gt;
+        &lt;/Appearances&gt;
+        &lt;Description&gt;【神算子】许璋&lt;/Description&gt;
+      &lt;/Actor&gt;
+      &lt;Actor&gt;
         &lt;Id&gt;MainBackground&lt;/Id&gt;
         &lt;Type&gt;Backgrounds&lt;/Type&gt;
         &lt;Appearances&gt;
@@ -431,8 +439,8 @@
         &lt;Type&gt;Characters/人物&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;王阳明&lt;/Path&gt;
-        &lt;Type&gt;Characters/人物&lt;/Type&gt;
+        &lt;Path&gt;Default&lt;/Path&gt;
+        &lt;Type&gt;Characters/小王阳明&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;3&lt;/Path&gt;
@@ -447,8 +455,8 @@
         &lt;Type&gt;Characters/人物&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;神秘人&lt;/Path&gt;
-        &lt;Type&gt;Characters/人物&lt;/Type&gt;
+        &lt;Path&gt;Default&lt;/Path&gt;
+        &lt;Type&gt;Characters/无为道者&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;陆九渊&lt;/Path&gt;
@@ -460,6 +468,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;3&lt;/Path&gt;
+        &lt;Type&gt;Characters/人物&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;1&lt;/Path&gt;
         &lt;Type&gt;Characters/人物&lt;/Type&gt;
       &lt;/Resource&gt;
     &lt;/Resources&gt;

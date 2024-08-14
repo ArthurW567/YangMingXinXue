@@ -99,27 +99,29 @@
 迎面而来一位仙风道骨的道家方士，飘飘乎遗世独立，恍若即将羽化登仙。
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 可知否道者姓名？
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 神秘人.Default position:4.7,-2.45 scale:0.33
 神秘人: 我自幼离家，不知姓名。人们见我时时静坐，便称我为“无为道者”。
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 道者今年高寿？
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 神秘人.Default position:4.7,-2.45 scale:0.33
 神秘人: 九十六岁矣。
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 高人，实在是高人，先生可有神仙养生之术？
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+
+@hideChars
+@char 无为道者.Default position:4.7,-2.3 scale:0.57
 无为道者: 静坐即可。养生的诀窍，不过是求得一个清静。老子清静，庄子逍遥，清静而后逍遥。
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 通过身体的安静，进入心灵的安静。心灵安静了，便能养生长寿，这就是静坐。
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 无为道者.Default position:4.7,-2.3 scale:0.57
 无为道者: 正是如此。道友好悟性，不知前来此地所为何事？
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 亲属所托，为成家立业，现在正是要离开的时候。
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 无为道者.Default position:4.7,-2.3 scale:0.57
 无为道者: 我有预感，我们还会再见的。
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 王阳明: 何时？
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 无为道者.Default position:4.7,-2.3 scale:0.57
 无为道者: 二十年后。
 （说完转身离去）
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
@@ -130,7 +132,7 @@
 
 # Level2_Fail
 @back 6
-@char 神秘人.Default position:4.7,-2.5 scale:0.5
+@char 无为道者.Default position:4.7,-2.3 scale:0.57
 无为道者: 静坐之道，要点在于将注意力放在呼吸上，从而内视自己。
 @hideAll time:0.01
 @stop

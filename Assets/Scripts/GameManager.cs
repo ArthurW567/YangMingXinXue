@@ -48,12 +48,12 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Victory!");
         LevelManager.Instance.Victory();
-        Player.falseTime = -99;
-        var service = Engine.GetService<ICustomVariableManager>();
+        Player.mistakeTime = -99;
         StartCoroutine("CameraA");
         open.SetActive(true);
         close.SetActive(false);
-        service.SetVariableValue("level", LevelManager.Instance.GetLevel().ToString());
+        //var service = Engine.GetService<ICustomVariableManager>();
+        //service.SetVariableValue("level", LevelManager.Instance.GetLevel().ToString());
     }
 
     void HandleFail()
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     }
 	private void Update()
 	{
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) || LevelManager.Instance.curLevelTime > LevelManager.Instance.LevelTime())
             UpdateGameState(GameState.Victory);
         if (Input.GetKeyDown(KeyCode.L))
             UpdateGameState(GameState.GameOver);
@@ -76,14 +76,16 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GameState.Playing:
-                LevelManager.Instance.GenerateSerial();
+                //LevelManager.Instance.GenerateSerial();
                 disturbanceGenerator.SetActive(true);
+                DisturbanceGenerator.Instance.StartGenerate();
+                LevelManager.Instance.StartLevel();
                 Time.timeScale = 1;
                 break;
             case GameState.GameOver:
                 //Time.timeScale = 0;
                 disturbanceGenerator.SetActive(false);
-                DisturbanceGenerator.Instance.Reset();
+                //DisturbanceGenerator.Instance.Reset();
                 HandleFail();
                 break;
             case GameState.Paused:
@@ -94,7 +96,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Victory:
                 disturbanceGenerator.SetActive(false);
-                DisturbanceGenerator.Instance.Reset();
+                //DisturbanceGenerator.Instance.Reset();
                 HandleVictory();
                 break;
         }
