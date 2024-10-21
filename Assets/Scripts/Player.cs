@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
+    public VolumeProfile profile;
+    public UnityEngine.Rendering.Universal.Vignette vignette;
+    public UnityEngine.Rendering.Universal.Bloom bloom;
+    public UnityEngine.Rendering.Universal.ColorAdjustments colorAdjustments;
 
     static public float health = 50f;
     static public float maxHealth = 100f;
@@ -16,18 +21,29 @@ public class Player : MonoBehaviour
     public int judge1 = 0;
     public int judge2 = 0;
     private int judgeShake = 0;
-    public float x;
+    public float x, fx;
+    float baseHealth;
+    GameObject debugText;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         health = 75f - 5f * LevelManager.level;
+        baseHealth = health;
+        profile = FindObjectOfType<Volume>().profile;
+        profile.TryGet(out vignette);
+        profile.TryGet(out bloom);
+        profile.TryGet(out colorAdjustments);
+        debugText = GameObject.Find("HPText");
+        mistakeTime = 0f;
     }
     bool mistake = false;
     bool regen = false;
+    public float dmgScore, bloomScore;
     void Breath()
     {
         x = animator.GetCurrentAnimatorStateInfo(0).normalizedTime - (int)animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        fx = (Mathf.Cos((x - 0.25f) * 2f * Mathf.PI) + 1f) / 2f;
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
 
         mistake = false;
@@ -67,13 +83,30 @@ public class Player : MonoBehaviour
             health = 100;
         if(health <= 0f)
             GameManager.Instance.UpdateGameState(GameState.GameOver);
+
+        // Update VFX
+        dmgScore = 0f;
+        bloomScore = 0f;
+        if (mistakeTime < -1f)
+            bloomScore = (-1f - mistakeTime) * 0.2f * fx;
+        if(health <= baseHealth * 0.5f)
+            dmgScore = 2f * (0.5f - health / baseHealth) * (0.6f * fx + 0.4f);
+        dmgScore = Mathf.Clamp01(dmgScore);
+        bloomScore = Mathf.Clamp01(bloomScore);
+
+        vignette.intensity.Override(dmgScore * 0.7f);
+        bloom.intensity.Override(bloomScore * 1.2f);
+        colorAdjustments.saturation.Override(bloomScore * -0.4f);
+
     }
     // Update is called once per frame
     void Update()
     {
         Breath();
-        GameObject.Find("HPText").GetComponent<Text>().text = "HP = " + health
-            + "\n X = " + x;
+        if(debugText)
+           debugText.GetComponent<Text>().text = "HP = " + health
+            + "\n X = " + x + " fx = " + fx
+            +"\n mt = " + mistakeTime;
     }
 
     void OnCollisionEnter2D(Collision2D other)

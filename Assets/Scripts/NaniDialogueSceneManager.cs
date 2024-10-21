@@ -18,6 +18,8 @@ public class NaniDialogueSceneManager : MonoBehaviour
         naniCamera.enabled = true;
         var naniUICamera = Engine.GetService<ICameraManager>().UICamera;
         naniUICamera.enabled = true;
+        naniCamera.cullingMask = ~0;
+        naniUICamera.cullingMask = ~0;
         Debug.Log("3");
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         scriptPlayer.PreloadAndPlayAsync(ScriptName, label: LevelManager.dialogueLabel).Forget();

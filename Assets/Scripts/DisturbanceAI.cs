@@ -19,7 +19,8 @@ public class DisturbanceAI : MonoBehaviour
 
     void CalcScale()
     {
-        float scale = 0.12f + Mathf.Pow(disturbance.health, 0.6f) * 0.02f;
+        float health = Mathf.Max(disturbance.health, 1f);
+        float scale = 0.12f + Mathf.Pow(health, 0.6f) * 0.02f;
         scale *= Mathf.Pow(0.95f, LevelManager.level - 1f);
         scale = Mathf.Clamp(scale, 0.10f, 0.24f);
         gameObject.transform.localScale = new Vector3(scale, scale, 1f);
@@ -53,6 +54,8 @@ public class DisturbanceAI : MonoBehaviour
     private void OnMouseDown()
     {
         disturbance.health--;
+        if(disturbance.health <= 0f)
+            StartCoroutine("Fade");
         CalcScale();        
     }
 
