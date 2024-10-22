@@ -18,7 +18,7 @@ public class DisturbanceGenerator : MonoBehaviour
     //private float TotalTime = 0;
     //private int Boss = 1;
     public GameObject[] gos;
-
+    static GameObject dPrefab;
     private void Awake()
     {
         Instance = this;
@@ -26,7 +26,6 @@ public class DisturbanceGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     public void StartGenerate()
@@ -41,15 +40,16 @@ public class DisturbanceGenerator : MonoBehaviour
         foreach (GameObject go in gos)
         {
             Destroy(go);
-        } 
+        }
     }
+    bool inWave = false;
 
     float IncreStrengthMultiplier()
 	{
         return 1f +
             0.4f * (LevelManager.Instance.curLevelTime / LevelManager.curParams.maxTime);
 	}
-    bool inWave = false;
+
     float WaveStrengthMultiplier()
 	{
         return inWave ? 1f + LevelManager.curParams.waveStrength : 1f;
@@ -116,21 +116,27 @@ public class DisturbanceGenerator : MonoBehaviour
     }
     void GenerateDisturbance(bool isBoss = false)
     {
+
+        if (!dPrefab)
+        {
+            dPrefab = Resources.Load<GameObject>("Prefabs/Disturbance");
+            Debug.Log("D");
+        }
         GenerationDirection dir = (GenerationDirection)Random.Range(0, 4);
         GameObject disturbance = null;
         switch (dir)
         {
             case GenerationDirection.Up:
-                disturbance = Instantiate(Resources.Load("Prefabs/Disturbance"), new Vector3(Random.Range(-9, 9), 6, 0), Quaternion.identity) as GameObject;
+                disturbance = Instantiate(dPrefab, new Vector3(Random.Range(-9, 9), 6), Quaternion.identity);
                 break;
             case GenerationDirection.Down:
-                disturbance = Instantiate(Resources.Load("Prefabs/Disturbance"), new Vector3(Random.Range(-9, 9), -6, 0), Quaternion.identity) as GameObject;
+                disturbance = Instantiate(dPrefab, new Vector3(Random.Range(-9, 9), -6), Quaternion.identity);
                 break;
             case GenerationDirection.Left:
-                disturbance = Instantiate(Resources.Load("Prefabs/Disturbance"), new Vector3(-10, Random.Range(-6, 6), 0), Quaternion.identity) as GameObject;
+                disturbance = Instantiate(dPrefab, new Vector3(-10, Random.Range(-6, 6)), Quaternion.identity);
                 break;
             case GenerationDirection.Right:
-                disturbance = Instantiate(Resources.Load("Prefabs/Disturbance"), new Vector3(10, Random.Range(-6, 6), 0), Quaternion.identity) as GameObject;
+                disturbance = Instantiate(dPrefab, new Vector3(10, Random.Range(-6, 6)), Quaternion.identity);
                 break;
         }
         var param = GetDisturbanceParam();

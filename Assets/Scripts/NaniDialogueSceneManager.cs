@@ -20,6 +20,9 @@ public class NaniDialogueSceneManager : MonoBehaviour
         naniUICamera.enabled = true;
         naniCamera.cullingMask = ~0;
         naniUICamera.cullingMask = ~0;
+        naniCamera.backgroundColor = Color.black;
+        naniUICamera.backgroundColor = Color.black;
+
         Debug.Log("3");
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         scriptPlayer.PreloadAndPlayAsync(ScriptName, label: LevelManager.dialogueLabel).Forget();

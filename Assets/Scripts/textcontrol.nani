@@ -1,84 +1,68 @@
 
 # Level1
-@char 王华.Default position:-5.2,-4.4 scale:0.5
-@back 4
-王华: 母亲昨夜梦见天神身着绯红衣衫，抱一个孩子从天而降，今天吾儿降生，真是祥瑞啊！我儿当名为“云”，取名王云。
-@hideChars
-……五年后……
-@char 王华.Default position:-5.2,-4.4 scale:0.5
-王华: (忧心忡忡）吾儿至今尚未开口说话，昨日有高僧路过家门，看到孩子直呼可惜。
-王华: 《论语》有言：知及之，仁不能守之，虽得之，必失之。若是不能守仁，孩子即使有智慧，也必然会失去。恪守本心，我的孩子就从今天开始改名为守仁吧！
-@hideChars
 @back 9
-……三年后……
-（院落中一个少年孩子在专心致志下象棋）
+……When Wang Yangming was 8 years old……
+(A young child in the courtyard intently playing Xiangqi (Chinese Chess))
 @char 王华.Default position:-5.2,-4.4 scale:0.5
-王华: 当年吾儿改名后，孩子不久就能说话了，天资聪颖，过目不忘。但是最近这段时间守仁沉溺于下象棋，被这种小游戏所迷惑，不读书习字，这不行。
-王华: 守仁，你最近沉溺于象棋，违背圣人教诲，不投入学习，这不可！
+王华: Yangming, you've been indulging in Xiangqi lately, going against the teachings of the sages and not devoting yourself to your studies, this must not be!
 @char 小王阳明.Default position:5.2,-2.45 scale:0.5
-小王阳明: 父亲，孔夫子说，即使是小的技艺，但也一定有可取之处，这不是说，可以钻研象棋游戏吗？
+小王阳明: Father, Confucius said that even though it is a minor skill, it must have merit. Doesn't this mean that one can delve into the game of Xiangqi?
 @char 王华.Default position:-5.2,-4.4 scale:0.5
-王华: 你断章取义的能力可是进步了，但孔夫子下文还说过一句话，你可记得？
+王华: Your ability to take things out of context has improved, but Confucius said something else below, do you remember?
 @char 小王阳明.Default position:5.2,-2.45 scale:0.5
-小王阳明: 不记得了。
+小王阳明: I don't remember.
 @char 王华.Default position:-5.2,-4.4 scale:0.5
-王华: 孔夫子又说，若是此事对远大事业有影响，则不是君子所为。你学艺不精，这几日，我看你就在静室内安分几天吧！
-; @hideChars
-; @back 说明1
-; 游戏说明（1/2)
-; @back 说明2
-; 游戏说明(2/2)
-; @hideAll time:0.01
-; @loadScene game additive:true
+王华: Confucius added, If this matter has a bearing on a far-reaching cause, it is not the work of a gentleman. You have not learned your art well, so for these few days, I think you should just settle down in the quiet room for a few days!
+
 
 
 @hideChars
 @back 9
-象棋在于乐悠悠，苦被严亲一旦丢；兵卒坠河皆不救，将帅溺水同时休；车马千里随波去，相士和川逐浪流；炮响声音天地震，象若心头为人揪。
+ Xiangqi lies in the joyfulness, the bitterness is once lost by the strict relatives; pawns fall into the river are not saved, kings and generals drowning at the same time to rest.
 @back 7
-1482年，王华获得京城官职，居家北上，王阳明进入北京私塾学习。
+In 1482, Wang Hua obtained an official position in the capital and lived in the north, and Wang Yangming entered a private school in Beijing.
 @char 教书先生.Default position:5.2,-4.4 scale:0.5
-教书先生: 各位还有什么疑惑?
+教书先生: Anybody else have any questions?
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 先生，我有一事不解。老师曾说过“天下第一等事”，是什么事？什么才是人生的终极价值？
+小王阳明: Sir, I don't understand one thing. you once said, “The first thing in the world”, what is it? What is the ultimate value of life?
 @char 教书先生.Default position:5.2,-4.4 scale:0.5
-教书先生: 当然是读书做大官。
+教书先生: Of course it's studying to become a big politician.
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 老师，我认为不是。
+小王阳明: I don't think so.
 @char 教书先生.Default position:5.2,-4.4 scale:0.5
-教书先生: 那你说说。
+教书先生: So tell me.
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 我认为第一等事是读书做圣贤。
+小王阳明: I think the first class thing is studying to become a sage.
 @char 教书先生.Default position:5.2,-4.4 scale:0.5
-教书先生: 那你这第一等事可真是太高了！哈哈哈哈……
+教书先生: That's a pretty high first class thing you've got going on then! Hahahahaha ......
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
 小王阳明: ……
 @hideChars
-（回到家中）
+(Back home)
 @back 4
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 你今日在课上当真是这样说的吗？你要读书做圣贤？
+王华: Did you really say that in class today? You want to study to be a sage?
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 当然。
+小王阳明: Sure.
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 那你应该把吹牛皮的功夫放到学业上。
+王华: Then you should put your bragging rights into your studies.
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 父亲，你和老师一样，都嘲笑我。
+小王阳明: Dad, you laugh at me as much as the teacher.
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 吾儿，你可知何为圣贤?
+王华: My son, do you know what a sage is?
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 书里说：为天地立心，为生民立命，为往圣继绝学，为万世开太平。
+小王阳明: It is said in the book: To establish a heart for heaven and earth, to establish a life for the people, to continue the great learning for the saints of the past, and to establish peace for all ages.
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 你虽然背书不错，但是，成为圣人的第一步如何开始？
-王华: 书里的这些话，太空太泛，没有给你真正去实践的方向，你应该自己去思考。
-王华: 若你当真想要成为圣贤，你所需要做的第一件事，就是——
-王华: 摒除杂念，不要在乎别人的想法，即使这个人是我。
+王华: You've memorized well, but how do you begin the first step to becoming a sage?
+王华: These words in the book are too spacey and generalized to give you the direction you need to actually go and practice what you should be thinking about on your own.
+王华: If you really want to be a sage, the first thing you need to do is--
+王华: Let go of distractions and don't care what other people think, even if that person is me.
 @hideChars
 ·····
 @back 6
-（月明星稀，树影斑驳，月光如水。）
+(The moon and stars, the shadows of the trees, the moonlight like water.)
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 我应该静思父亲说的这些话。
+小王阳明: I should meditate on what my father said.
 @hideAll time:0.01
 @stop
 
@@ -86,46 +70,46 @@
 # Level1_Fail
 @back 6
 @char 小王阳明.Default position:-5.2,-2.45 scale:0.5
-小王阳明: 再试试，如父亲所说，摒除杂念，专注呼吸。
+小王阳明: Try again, as father said, to dismiss distractions and focus on your breathing.
 @hideAll time:0.01
 @stop
 
 
 # Level2
 @back 6
-1488年，王守仁按照父辈约定，奔赴江西南昌迎娶妻子。
-结果新婚当夜，王守仁却独自一人走在南昌城街道上，不知不觉走到一处道观。
-上写：“铁柱宫”三个大字。
-迎面而来一位仙风道骨的道家方士，飘飘乎遗世独立，恍若即将羽化登仙。
+In 1488, Wang Yangming followed his father's agreement and ran to Nanchang, Jiangxi Province to marry his wife.
+As a result, on the wedding night, Wang Yangming was walking alone on the streets of Nanchang City, and unknowingly walked to a Taoist temple.
+The three big words written on it are: “Tiezhu Gong” (Temple of Iron Pillars).
+On the face of an immortal Taoist priest, floating in the world, as if he was about to become immortal.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 可知否道者姓名？
+王阳明: May I know your name?
 @char 神秘人.Default position:4.7,-2.45 scale:0.33
-神秘人: 我自幼离家，不知姓名。人们见我时时静坐，便称我为“无为道者”。
+神秘人: I left home at a young age and I do not know my name. When people saw me meditating, they called me “Wu-Wei Taoist” (The Taoist of Nothing).
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 道者今年高寿？
+王阳明: How many years have you lived?
 @char 神秘人.Default position:4.7,-2.45 scale:0.33
-神秘人: 九十六岁矣。
+神秘人: 96 years.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 高人，实在是高人，先生可有神仙养生之术？
+王阳明: You're really a master. Do you have the art oflongevity?
 
 @hideChars
 @char 无为道者.Default position:4.7,-2.3 scale:0.57
-无为道者: 静坐即可。养生的诀窍，不过是求得一个清静。老子清静，庄子逍遥，清静而后逍遥。
+无为道者: Meditation is sufficient. The trick to nourishing your life is just to seek a clear and quiet. Laozi is quiet, Zhuangzi is free, quiet and then free.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 通过身体的安静，进入心灵的安静。心灵安静了，便能养生长寿，这就是静坐。
+王阳明: Through the quieting of the body, one enters the quieting of the mind. When the mind is quiet, you will be able to nourish yourself and live a long life, and this is meditation.
 @char 无为道者.Default position:4.7,-2.3 scale:0.57
-无为道者: 正是如此。道友好悟性，不知前来此地所为何事？
+无为道者: Exactly. You're very perceptive. I wonder what you've come here for?
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 亲属所托，为成家立业，现在正是要离开的时候。
+王阳明: Relatives have been entrusted with the task of starting a family, and now is the time to leave.
 @char 无为道者.Default position:4.7,-2.3 scale:0.57
-无为道者: 我有预感，我们还会再见的。
+无为道者: I have a feeling we'll see each other again.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 何时？
+王阳明: When？
 @char 无为道者.Default position:4.7,-2.3 scale:0.57
-无为道者: 二十年后。
-（说完转身离去）
+无为道者: After 20 years。
+(Turns away after saying that)
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 夜还长，我便在这道观试试无为道长的养生之法，等待天明。
+王阳明: The night is still long, so I'll try Master Wu-Wei's method in this Taoist temple and wait for the dawn.
 @hideAll time:0.01
 @stop
 
@@ -133,7 +117,7 @@
 # Level2_Fail
 @back 6
 @char 无为道者.Default position:4.7,-2.3 scale:0.57
-无为道者: 静坐之道，要点在于将注意力放在呼吸上，从而内视自己。
+无为道者: The point of the meditation path is to look within yourself by focusing on your breath.
 @hideAll time:0.01
 @stop
 
@@ -141,23 +125,23 @@
 
 # Level3
 @back 1
-第二年，秋，王阳明与亲眷一起回到老家浙江余姚。
+The next year, in the fall, Wang Yangming returned to his hometown of Yuyao, Zhejiang Province, with his relatives.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 今日即将去拜访此地著名理学家娄谅，不知我会收获到什么。
-王阳明: 拜见先生，我今日前来询问先生，如何成为圣贤？
+王阳明: Today, I am going to visit Lou Liang, a famous rationalist here, and I don't know what I will gain.
+王阳明: Greetings, sir. I have come today to ask you how to become a sage.
 @char 陆九渊.Default position:5.2,-4.4 scale:0.5
-陆九渊: 成为圣贤，可以依靠后天学习而得。
+陆九渊: Becoming a sage can be achieved by learning later in life.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 为万世开太平可是成为圣贤的捷径？
+王阳明: Is peace for the ages a shortcut to becoming a sage?
 @char 陆九渊.Default position:5.2,-4.4 scale:0.5
-陆九渊: 并不是。为万世开太平乃是外在所显示的结果，首先需要内在修炼为“内圣”。
+陆九渊: Not really. Peace for the world is an external result, but it requires internal cultivation to become an “inner saint”.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 如何成为“内圣”
+王阳明: How to become an “inner saint”?
 @char 陆九渊.Default position:5.2,-4.4 scale:0.5
-陆九渊: 格物致知。
+陆九渊: Gratitude.
 @back 5
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 娄先生说，圣人的境界可以学习而抵达，方法是”格“。如此看来，朱熹所言“草木都含有至高道理”，我不妨尝试一番。
+王阳明: Mr. Lou said, the saint's realm can be learned and arrived, the method is “frame”. So it seems, Zhu Xi said, “grass and trees contain the highest reason”, I might as well try.
 @hideAll time:0.01
 @stop
 
@@ -165,7 +149,7 @@
 # Level3_Fail
 @back 6
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 格物致知要求内心专注，莫非我还不够专注？再来一次，这次应当专注呼吸，静心格竹。
+王阳明: Geshe requires inner concentration, could it be that I am not concentrating enough? Let's try it again. This time we should focus on breathing and meditate on the bamboo.
 @hideAll time:0.01
 @stop
 
@@ -173,58 +157,58 @@
 # Level4
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 @back 5
-王阳明: 转眼七天过去，我一无所获！反而头晕眼花，肢体疲惫。看来，格物致知不可抵达啊！
-王阳明: 格一个竹子便让我大病一场，天地的道理各自不相同，竹子的道理也不会被其它东西所承认。通过这条路成为圣贤，对我来说太不可能！我只能选择其它路了……
+王阳明: Seven days had passed and I had gained nothing! On the contrary, I am dizzy and my limbs are tired. It seems that the Guru is not to be arrived at!
+王阳明: A single bamboo made me very ill; the truths of heaven and earth are each different, and the truths of the bamboo will not be recognized by anything else. Becoming a sage through this path is too impossible for me! I can only choose other paths ......
 @back 3
-（1493年，王守仁会会试名落孙山)。
+(In 1493, Wang Yangming failed the imperial examination)
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 原先我钻研道教和佛家，但是都不曾有收获，如今放弃。但是好文章可以让人明确本心、树立宏伟的愿望。我要钻研文学。
-（在文学领域，王守仁取得灿烂成就，被誉为文学天才）
+王阳明: Originally I delved into Taoism and Buddhism, but neither was fruitful and now I give up. But good writing can make one's heart clear and set up grand aspirations. I want to study literature.
+(In the field of literature, Wang Yangming made brilliant achievements and was regarded as a literary genius.)
 @char 友人.Default position:5.2,-4.4 scale:0.5
-友人: 我听说余姚附近有一个奇人，能够占卜，被称为神算子。阳明，你最近一直钻研文学，也应该走一走，恢复身体。
+友人: I've heard that there's a strange man near Yuyao who can divine and is known as the Divine Calculator. Yang Ming, you've been studying literature lately, you should also take a walk to recover your health.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 好，如果他能对我的文学做出有益点评，那再好不过了。
+王阳明: Well, it would be nice if he could make a helpful critique of my literature.
 @back 7
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 久仰先生大名，一直好奇先生在文学上有何高见。
+王阳明: I've heard a lot about you, and I've always been curious about what you have to say about literature.
 @char 许璋.Default position:5.2,-4.4 scale:0.5
-许璋: 我也听说过你的大名，但是我无法为你解答。辞章在我看来，不过是小事罢了，它终究不能成大业，更何况是成为圣贤这种伟大的理想。
+许璋: I have also heard of your great name, but I cannot answer for you. Rhetoric, in my opinion, is nothing more than a trivial matter; it cannot, after all, lead to great things, let alone such great ideals as becoming a sage.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 那该如何？
+王阳明: So what's to be done?
 @char 许璋.Default position:5.2,-4.4 scale:0.5
-许璋: 建功立业是圣贤的不二法门，你如果真是胸藏韬略、有经略天下之志，还愁没有机会施展？所以，应该努力提升军事能力。
+许璋: Building up a career is the unquestionable goal of the sages. If you really have a chest of tactics and the ambition to strategize the world, why worry about not having the opportunity to do so? Therefore, efforts should be made to enhance military capability.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 先生说的有道理，我希望向先生学习军事知识。
+王阳明:  Sir, you have a point, and I wish to learn about the military from you.
 @hideChars
-在许璋的引导下，王阳明学习了许多军事理论，得其真传。
+Under the guidance of Xu Zhang, Wang Yangming learned many military theories and gained his true heritage.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 懂军事，便可经略四方，成就宏图大业。
-王阳明辞别许璋之后，回到了京城家中。
+王阳明: If you know the military, you can strategize and achieve great things.
+After Wang Yangming bid farewell to Xu Zhang, he returned home to the capital.
 @back 7
 @char 亲人.Default position:5.2,-4.4 scale:0.5
-亲人: 你可有准备今年的考试？
+亲人: Have you prepared for this year's exams?
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 未曾，那不重要。来来来，我们一起来看看用兵之道，用果核表示军事阵营，来看一看……
+王阳明: Not yet, that doesn't matter. Come on, come on, let's take a look at the way to use the kernels to indicate military camps, take a look ......
 @char 亲人.Default position:5.2,-4.4 scale:0.5
-亲人: 一个不同的阵营就能克敌制胜了吗？
+亲人: Is a different camp enough to overcome the enemy?
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 当然不是
+王阳明: Of course no.
 @char 亲人.Default position:5.2,-4.4 scale:0.5
-亲人: 那是如何？
+亲人: How was that?
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 攻心！虚虚实实，让敌人的心慌乱，动起来没有章法，我们就能趁势而入，以最小的代价取得最大的胜利。
+王阳明: Attack the heart! By making the enemy's heart panic and move without discipline, we can take advantage of the situation and achieve the greatest victory at the smallest cost.
 @char 亲人.Default position:5.2,-4.4 scale:0.5
-亲人: 你说的虽然有道理，但是还是科举考试重要，你还是考过了再说吧！
-科举揭榜，王守仁因心思不在应对科举考试上，并未中举。
+亲人: You have a point, but it's still the imperial exams that are important, so you might as well pass them!
+When the imperial examinations were announced, Wang Yangming did not win because his mind was not on dealing with the examinations.
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 吾儿，考试不中不要紧。虔诚地坚持你的志向才是读书最重要的，而后一循序渐进的方式去坚持读书，才能有所成就。
+王华: My son, it doesn't matter if you don't win the exam. The most important thing in reading is to stick to your ambition religiously, and then stick to it in a gradual way in order to achieve something.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 父亲，别人会因为科举不中而感到羞耻，但我却不以为意。并且，我认为因科举不中感到懊悔才是真正让人羞耻的事情。
+王阳明: Father, other people feel ashamed for failing to win the imperial examinations, but I don't think so. And, I think feeling remorse for failing in the imperial examinations is the real shameful thing.
 @char 王华.Default position:5.2,-4.4 scale:0.5
-王华: 你如果不同科举，怎么当大官，怎么成为大将军，如何使天下太平？怎么实现你自己的心中抱负！
+王华: If you don't take the imperial examination, how can you become a great official, how can you become a great general, how can you make the world peaceful? How to realize the ambition of your own heart!
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 父亲所言及是！这些年我一直在不同的领域，儒家、道家、军事，但是没有任何一个领域深入研究，最终什么结果都没有。
-王阳明: 今夜，我应该静坐反思之后的路如何走。
+王阳明: What my father has said is true! Over the years I have been in different fields, Confucianism, Taoism, and the military, but none of them have been studied in depth, and ultimately nothing has come of it.
+王阳明: Tonight, I should sit in silence and reflect on how to proceed afterward.
 @hideAll time:0.01
 @stop
 
@@ -232,22 +216,22 @@
 # Level4_Fail
 @back 6
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 攻心为上，首先要让我的内心平静，达到心如止水的境界，再静坐想想吧。
+王阳明: Attacking my mind is the first thing I need to do to calm my heart and reach a state where my mind is like water, and then I'll sit in meditation and think about it.
 @hideAll time:0.01
 @stop
 
 
 # Level5
 @back 4
-1499年，王守仁获得京城官职。其出众的文章笔法屡被当朝元老盛赞。但在大明王朝表面的平和下，宦官一派却在帝王放权的情况下泛起贪欲，开始专政，一大批清正的官僚被排挤贬谪，剩下的京官人人自危。
-获得官位大不易，明哲保身是当时最明智的行为，但王守仁依然耿直进谏。尽管身边多人劝阻，他心亦知上疏可能无法被皇上亲眼看到便会被拦截，但依然义无反顾。“此事不在乎结果，但在于是否去行动”，知其不可为而为之的王守仁也为其行为付出了代价，被贬至贵州龙场。
+In 1499, Wang Yangming obtained an official position in the capital. His outstanding writing style was repeatedly praised by the patriarchs of the dynasty. However, under the apparent peace of the Ming dynasty, a faction of eunuchs became greedy and began to dictate under the emperor's devolution of power. A large number of upright bureaucrats were sidelined and relegated to exile, and the remaining officials in the capital were in danger of their own safety.
+It was not easy to get an official position, and it was the wisest thing to do at that time, but Wang Yangming continued to admonish the Emperor. Although many people around him discouraged him, and he knew that he would be intercepted if he could not be seen by the emperor, he was still determined to do so. “This matter does not care about the result, but lies in whether or not to take action”. Wang Yangming, who knew that he could not do it, paid the price for his behavior and was relegated to Longchang, Guizhou.
 @back 8
-龙场地处偏远，位于山沟荒野，是未开化之地，民风彪悍，环境恶劣。京官风尘仆仆远道而来，在此地往往待不了多久便难以忍受恶劣的环境，不仅如此，王守仁当时正罹患疾病，身体虚弱。
-更糟糕的是，因王阳明的奏章，宦官恼羞成怒，派人追杀，幸好王阳明发挥自己的聪明才智，躲过一劫。
+Longchang is located in a remote area, in the wilderness of the ravine, is an uncivilized place, the people are tough, the environment is harsh. The officials from the capital came all the way here, and often could not tolerate the harsh environment after a short time. Not only that, Wang Yangming was suffering from a disease at that time, and his body was weak.
+Worse still, because of Wang Yangming's petition, the eunuchs were infuriated and sent people to chase after him, but fortunately Wang Yangming used his own ingenuity and dodged a bullet.
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 这一路上真不容易！那些宦臣居然派人追杀我，幸亏我逃进水里躲过追兵。眼下追兵离开不远，龙场还在远方，对着山川，静坐听雨吧！
+王阳明: It's been a difficult journey! Those eunuchs actually sent people after me, but fortunately I escaped into the water to avoid my pursuers. Right now the pursuers are not far away, Longchang is still far away, so let's sit quietly and listen to the rain against the mountains and rivers!
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 终于到了龙场。这里荒僻万分，民风强悍，父亲说，朝廷委任，我对此地地百姓负有责任，我应当好好对待这里的百姓。
+王阳明: Finally arrived at Longchang. This place is very remote and the people are very tough. My father said, “The court appointed me to be responsible for the people of this place, so I should treat the people here well.
 @hideAll time:0.01
 @stop
 
@@ -255,15 +239,15 @@
 # Level5_Fail
 @back 6
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 此地瘴气颇多，我的身体已然支撑不住，此时更应提起精神，磨练自己的心智，让自己内心平静，思考人生的破局之路，再静坐试一试吧。
+王阳明: There is quite a lot of miasma in this place, and my body can no longer support it. At this time, it is all the more important to raise my spirit, sharpen my mind, make myself calm inside, and think about the path of breaking through in life, so let's sit in meditation and try it out again.
 @hideAll time:0.01
 @stop
 
 
 # Level6
 @back 8
-王阳明: 转眼在这里已经上任三月了，最先担心这里百姓性格强硬，但是却对我的工作很是认可。虽然这里被认为没有开化，但是人的本性是不会因为文化而改变的。
-王阳明: 我在这里虽然没有高俸禄，但是内心获得了久违的平静。所谓圣人的道理，究竟是外向探求，还是向内问自己的本心呢？当初京官时我的内心焦虑烦躁，如今确变得清明安和。不过，这也有赖于我的静坐修行啊！
+王阳明: It has been three months since I took office here, and I was first worried about the toughness of the people here, but they have been very receptive to my work. Although this place is considered unenlightened, the nature of people does not change because of culture.
+王阳明: I am not highly paid here, but I have gained an inner peace that I have not known for a long time. Is the so-called truth of the saints to be sought outwardly or to be asked inwardly of one's own heart? I was anxious and irritable when I was a government official in the capital, but now I have become clear and peaceful. However, this also depends on my meditation practice!
 @hideAll time:0.01
 @stop
 
@@ -271,7 +255,7 @@
 # Level6_Fail
 @back 6
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
-王阳明: 此地瘴气颇多，我的身体已然支撑不住，此时更应提起精神，磨练自己的心智，让自己内心平静，思考人生的破局之路，再静坐试一试吧。
+王阳明: There is quite a lot of miasma in this place, and my body can no longer support it. At this time, it is all the more important to raise my spirit, sharpen my mind, make myself calm inside, and think about the path of breaking through in life, so let's sit in meditation and try it out again.
 @hideAll time:0.01
 @stop
 
@@ -279,16 +263,16 @@
 # End
 @char 王阳明.Default position:-5.2,-4.4 scale:0.5
 @back 8
-王阳明: 龙场的这些时间，我看到此地百姓如何生、如何死。
-王阳明: 前一日还是亲长带着孩子一起生活，第二日便可能因为天灾人祸就死去。
-王阳明: 生命无常，但若因生命无常而不珍惜在世的每一日，不过是对年华的虚度罢了。
-王阳明: 纵我生命短暂，可在此地为此地百姓修水利、平冤案，为他人亦可有裨益。
-王阳明: 我虽然不知自己何时会死去，但是我心中在此刻却能感受到当下的幸福和满足。
-王阳明: 虽然外物我不能控制，但是内心的情感确是我能选择的。
-王阳明: 竹子的道理不适用梧桐，向外求于其它事物，总会碰壁！
-王阳明: 但是，若是以自己的内心去观天下，则见竹是竹，见山为山，终究见到自己、众生和天下。
+王阳明: All this time in Longchang, I have seen how the people of this place live and die.
+王阳明: One day they are living with their children, and the next day they may be dead because of a natural or man-made disaster.
+王阳明: Life is impermanent, but if you don't cherish every day of your life because it is impermanent, you are just wasting your time.
+王阳明: Even though my life is short, I can be here for the people of this place to repair the water conservancy and to redress the injustice, and I can also be of benefit to others.
+王阳明: I don't know when I'm going to die, but I can feel the happiness and fulfillment of the present moment in my heart at this very moment.
+王阳明: Although I can't control the external things, the internal emotions are indeed something I can choose.
+王阳明: The reasoning of the bamboo does not apply to the sycamore, and if you look outward to other things, you will always hit a wall!
+王阳明: However, if you look at the world from within yourself, you will see bamboo as bamboo, mountains as mountains, and ultimately see yourself, all beings, and the world.
 @back 3
-（被贬龙场，王守仁始终没有忘记过去的追求，孜孜不倦对于”如何成为圣贤“进行摸索。一夜冥思，他写下”圣人之道，吾性自足“八字，史称“龙场悟道”。
+(After being relegated to Longchang, Wang Yangming never forgot his past pursuits, and tirelessly tried to figure out “how to become a sage”. After a night's meditation, he wrote down the words “The way of the sages, my nature is self-sufficient”, which is known as the “Enlightenment of the Way in Longchang”.)
 @wait 5.0
 @hideAll time:1
 @stop
